@@ -1,9 +1,9 @@
 Last version
 ==============
 
-python_ldap on  main [!] via 🐍 v3.9.2
+python_git on  main [!] via 🐍 v3.9.2
 ❯ make build
-docker build --tag pvergain/python_ldap:3.9.2-slim-buster .
+docker build --tag pvergain/python_git:3.9.2-slim-buster .
 Sending build context to Docker daemon  195.6kB
 Step 1/4 : FROM python:3.9.2-slim-buster as builder
  ---> ce689abb4f0d
@@ -17,9 +17,9 @@ Step 4/4 : CMD ["sleep", "10000000000"]
  ---> Using cache
  ---> e5c482716cc5
 Successfully built e5c482716cc5
-Successfully tagged pvergain/python_ldap:3.9.2-slim-buster
+Successfully tagged pvergain/python_git:3.9.2-slim-buster
 
-python_ldap on  main [!] via 🐍 v3.9.2
+python_git on  main [!] via 🐍 v3.9.2
 ❯ make login
 docker login
 Authenticating with existing credentials...
@@ -29,10 +29,10 @@ https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 
 Login Succeeded
 
-python_ldap on  main [!] via 🐍 v3.9.2
+python_git on  main [!] via 🐍 v3.9.2
 ❯ make push
-docker push pvergain/python_ldap:3.9.2-slim-buster
-The push refers to repository [docker.io/pvergain/python_ldap]
+docker push pvergain/python_git:3.9.2-slim-buster
+The push refers to repository [docker.io/pvergain/python_git]
 a4d863a16950: Pushed
 fe796314f3f4: Mounted from library/python
 a642096e6e01: Mounted from library/python
@@ -64,9 +64,9 @@ Exemple for building a Django + LDAP sphinx documentation with gitlab
 # hub docker
 # -----------
 #
-# - https://hub.docker.com/repository/docker/pvergain/python_ldap
+# - https://hub.docker.com/repository/docker/pvergain/python_git
 #
-image: pvergain/python_ldap:3.9.2-slim-buster
+image: pvergain/python_git:3.9.4-slim-buster
 
 pages:
   stage: deploy
@@ -79,29 +79,29 @@ pages:
     paths:
     - public
   only:
-  - master
+  - main
 ```
 
-# github python_ldap
+# github python_git
 
 Dockerfile with Python + gcc + LDAP
 
-- https://github.com/pvergain/python_ldap
+- https://github.com/pvergain/python_git
 
 # Docker Hub
 
-- https://hub.docker.com/repository/docker/pvergain/python_ldap
+- https://hub.docker.com/repository/docker/pvergain/python_git
 
 # Dockerfile
 
-- https://github.com/pvergain/python_ldap/blob/main/Dockerfile
+- https://github.com/pvergain/python_git/blob/main/Dockerfile
 
 # Makefile
 
-- https://github.com/pvergain/python_ldap/blob/main/Makefile
+- https://github.com/pvergain/python_git/blob/main/Makefile
 
 # .pre-commit-config.yaml
 
-- https://github.com/pvergain/python_ldap/blob/main/.pre-commit-config.yaml
+- https://github.com/pvergain/python_git/blob/main/.pre-commit-config.yaml
 
 
