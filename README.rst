@@ -12,12 +12,15 @@ Pour le changement
 - 3) make build
 - 4) make login (2)
 - 5) make push
-- make push (push to docker) (3)
-- make autoupdate
 
 
-Last version : 3.9.5
-========================
+Last version : 3.9.6 (Lundi 5 juillet 2021)
+==============================================
+
+
+Exemple 3.9.5
+===============
+
 
 ::
 
