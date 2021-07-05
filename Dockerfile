@@ -1,12 +1,12 @@
 # dockerfile
 #
-# building python  with git support
-FROM python:3.9.4-slim-buster as builder
+# building python  with git and pandoc support
+FROM python:3.9.6-slim-buster as builder
 
 # we need git
 RUN apt-get update \
     && pip install -U pip wheel \
-    && apt-get -y install git --no-install-recommends \
+    && apt-get -y install git pandoc --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # ENV PYTHONUNBUFFERED 1 : this statement means that Docker won’t buffer
